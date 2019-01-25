@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Title</title>
+</head>
+<body>
+<script>
+
+   function is_usZipCode(str) {
+       var regular =  /^[(84)]{4}[-]{1}[(0-9)]{12}$/;
+       if (regular.test(str)) {
+           return true;
+       }
+       return false;
+   }
+   var zipcode = "(84)-(0978489648)";
+   alert(is_usZipCode(zipcode));
+   var zipcode = "(a8)-(22222222)";
+   alert(is_usZipCode(zipcode));
+</script>
+</body>
+</html>

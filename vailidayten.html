@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Title</title>
+</head>
+<body>
+<script>
+
+   function is_usZipCode(str) {
+       var regular =  /^[CAP]{1,}[0-9]{4}[GHIKLM]{1}$/;
+       if (regular.test(str)) {
+           return true;
+       }
+       return false;
+   }
+   var zipcode = "C0318G";
+   alert(is_usZipCode(zipcode));
+   var zipcode = "@gmail.com";
+   alert(is_usZipCode(zipcode));
+</script>
+</body>
+</html>

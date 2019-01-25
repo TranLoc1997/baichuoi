@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Title</title>
+</head>
+<body>
+<script>
+
+   function is_usZipCode(str) {
+       var regular =  /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+       if (regular.test(str)) {
+           return true;
+       }
+       return false;
+   }
+   var zipcode = "a@gmail.com";
+   alert(is_usZipCode(zipcode));
+   var zipcode = "@gmail.com";
+   alert(is_usZipCode(zipcode));
+</script>
+</body>
+</html>
